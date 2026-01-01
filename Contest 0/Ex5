@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Tran Tien Dung
+ */
+public class Ex5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        double squareRoot = Math.sqrt(n);
+        double cubeRoot = Math.cbrt(n);
+        System.out.printf("%.2f\n", squareRoot);
+        System.out.printf("%.3f\n", cubeRoot);
+    }
+}
