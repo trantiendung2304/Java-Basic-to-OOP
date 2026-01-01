@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Tran Tien Dung
+ */
+
+public class Ex4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt(), y = sc.nextInt();
+        double pow = Math.pow(x, y);
+        if(pow == (int)pow){
+            System.out.println((int)pow);
+        } else {
+            System.out.printf("%.2f", pow);
+        }
+    }
+}
