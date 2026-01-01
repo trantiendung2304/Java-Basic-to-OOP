@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Tran Tien Dung
+ */
+
+public class Ex7 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        long n = sc.nextLong();
+        int finalDigit = (int) n % 10;
+        int twoFinalDigit = (int) n % 100;
+        System.out.println(finalDigit);
+        System.out.println(twoFinalDigit);
+    }
+}
