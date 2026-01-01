@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Tran Tien Dung
+ */
+
+public class Ex8 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int b = sc.nextInt(), a = sc.nextInt();
+        int floorDivision = a / b;
+        float division = (float) a / b;
+        System.out.println(floorDivision);
+        System.out.printf("%.2f\n", division);
+    }
+}
