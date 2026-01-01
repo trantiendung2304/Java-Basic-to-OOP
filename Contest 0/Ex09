@@ -5,7 +5,7 @@ import java.util.Scanner;
  * @author Tran Tien Dung
  */
 
-public class Ex9 {
+public class Ex09 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         long n = sc.nextLong();
