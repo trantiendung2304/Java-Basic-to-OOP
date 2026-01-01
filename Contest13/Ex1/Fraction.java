@@ -1,4 +1,4 @@
-package Ex1;
+package Contest13.Ex1;
 
 /**
  *
