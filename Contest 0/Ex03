@@ -5,7 +5,7 @@ import java.util.Scanner;
  * @author Tran Tien Dung
  */
 
-public class Ex3 {
+public class Ex03 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int x = sc.nextInt(), y = sc.nextInt(), z = sc.nextInt(), t = sc.nextInt();
