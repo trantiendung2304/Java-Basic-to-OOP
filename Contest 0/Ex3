@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Tran Tien Dung
+ */
+
+public class Ex3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt(), y = sc.nextInt(), z = sc.nextInt(), t = sc.nextInt();
+        System.out.println(y + "," + z + "," + x + "," + t);
+        long sum = 1L * (x + y + z + t);
+        System.out.println(sum);
+        long expression = x - y + 1L * z * t; // expression: biểu thức
+        System.out.println(expression);
+    }
+}
