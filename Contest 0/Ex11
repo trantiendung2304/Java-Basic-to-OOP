@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Tran Tien Dung
+ */
+
+public class Ex11 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        long doubleN = 1L * n * 2;
+        long tenN = 1L * n * 10;
+        int floorDivision = n / 2;
+        float division = (float) n / 2;
+        System.out.println(doubleN);
+        System.out.println();
+        System.out.println(tenN);
+        System.out.println();
+        System.out.println(floorDivision);
+        System.out.println();
+        System.out.printf("%.3f\n", division);
+    }
+}
