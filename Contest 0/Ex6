@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Tran Tien Dung
+ */
+
+public class Ex6 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        float x = sc.nextFloat();
+        double floor = Math.floor(x);
+        double ceil = Math.ceil(x);
+        double round = Math.round(x);
+        System.out.println((int)floor);
+        System.out.println((int)ceil);
+        System.out.println((int)round);
+    }
+}
