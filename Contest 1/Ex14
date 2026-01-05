@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Tran Tien Dung
+ */
+
+public class Ex14 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        float scoreHS1_1 = sc.nextFloat();
+        float scoreHS1_2 = sc.nextFloat();
+        float scoreHS2 = sc.nextFloat();
+        float scoreHS3 = sc.nextFloat();
+        float averageScore = (scoreHS1_1 + scoreHS1_2 + scoreHS2 * 2 + scoreHS3 * 3) / (1 + 1 + 2 + 3);
+        if(averageScore >= 8){
+            System.out.println("GIOI");
+        }
+        else if(averageScore >= 6.5){
+            System.out.println("KHA");
+        }
+        else if(averageScore >= 5){
+            System.out.println("TRUNG BINH");
+        }
+        else{
+            System.out.println("YEU");
+        }
+    }
+}
