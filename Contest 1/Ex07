@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Tran Tien Dung
+ */
+
+public class Ex07 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt(), b = sc.nextInt();
+        int num1 = (a / b) * b;
+        int num2;
+        if(a % b == 0){
+            num2 = a;
+        }
+        else{
+            num2 = ((a / b) + 1) * b;
+        }
+        System.out.println(num1);
+        System.out.println(num2);
+    }
+}
