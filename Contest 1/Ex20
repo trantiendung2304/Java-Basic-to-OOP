@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Tran Tien Dung
+ */
+
+public class Ex20 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt(), m = sc.nextInt(), a = sc.nextInt();
+        int numSquare1 = 0, numSquare2 = 0;
+        if(n % a == 0){
+            numSquare1 = n / a;
+        }
+        else{
+            numSquare1 = (n / a) + 1;
+        }
+        if(m % a == 0){
+            numSquare2 = m / a;
+        }
+        else{
+            numSquare2 = (m / a) + 1;
+        }
+        long totalSquare = numSquare1 * numSquare2 * 1L;
+        System.out.println(totalSquare);
+    }
+}
