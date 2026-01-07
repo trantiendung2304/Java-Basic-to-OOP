@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Tran Tien Dung
+ */
+
+public class Ex19 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int m = sc.nextInt(), n = sc.nextInt();
+        int domino = 0;
+        if(n % 2 == 0){
+            domino = m * (n / 2);
+        }
+        else{
+            domino = m * (n / 2) + m / 2;
+        }
+        System.out.println(domino);
+    }
+}
