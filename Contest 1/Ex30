@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Tran Tien Dung
+ */
+
+public class Ex30 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        long totalWays = ((n - 1) * n) / 2;
+        System.out.println(totalWays);
+    }
+}
