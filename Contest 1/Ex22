@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Tran Tien Dung
+ */
+
+public class Ex22 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        long S = sc.nextLong();
+        long coin = 0;
+        if(S % n == 0){
+            coin = S / n;
+        }
+        else{
+            coin = S / n + 1;
+        }
+        System.out.println(coin);
+    }
+}
