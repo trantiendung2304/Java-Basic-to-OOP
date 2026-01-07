@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Tran Tien Dung
+ */
+
+public class Ex26 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        long a = sc.nextLong(), b = sc.nextLong(), c = sc.nextLong(), d = sc.nextLong();
+        long maxNum = Math.max(a, Math.max(b, Math.max(c, d)));
+        long minNum = Math.min(a, Math.min(b, Math.min(c, d)));
+        System.out.println(maxNum + " " + minNum);
+    }
+}
