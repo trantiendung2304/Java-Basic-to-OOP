@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Tran Tien Dung
+ */
+
+public class Ex16 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        char c = sc.nextLine().charAt(0);
+        if(c >= 'A' && c < 'Z'){
+            System.out.println(c += 33);
+        }
+        else if(c == 'Z'){
+            System.out.println("a");
+        }
+        else if(c >= 'a' && c < 'z'){
+            System.out.println(c += 1);
+        }
+        else{
+            System.out.println("a");
+        }
+    }
+}
