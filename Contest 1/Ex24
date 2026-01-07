@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Tran Tien Dung
+ */
+
+public class Ex24 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int d1 = sc.nextInt(), d2 = sc.nextInt(), d3 = sc.nextInt();
+        long distance1 = ((long)d1 + d3) * 2;
+        long distance2 = ((long)d2 + d3) * 2;
+        long distance3 = (long)d1 + d2 + d3;
+        long distance4 = ((long)d1 + d2) * 2;
+        long finalDistance = Math.min(distance1, Math.min(distance2, Math.min(distance3, distance4)));
+        System.out.println(finalDistance);
+    }
+}
