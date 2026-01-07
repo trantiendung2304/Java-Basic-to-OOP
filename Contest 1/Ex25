@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Tran Tien Dung
+ */
+
+public class Ex25 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int totalBills = 0;
+        if(n >= 100){
+            totalBills = totalBills + n / 100;
+            n = n - (n / 100) * 100;
+        }
+        if(n >= 20){
+            totalBills = totalBills + n / 20;
+            n = n - (n / 20) * 20;
+        }
+        if(n >= 10){
+            totalBills = totalBills + n / 10;
+            n = n - (n / 10) * 10;
+        }
+        if(n >= 5){
+            totalBills = totalBills + n / 5;
+            n = n - (n / 5) * 5;
+        }
+        totalBills = totalBills + n;
+        System.out.println(totalBills);
+    }
+}
