@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Tran Tien Dung
+ */
+
+public class Ex12 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt(), n = sc.nextInt();
+        if(t <= 0 || t > 12 || n < 0){
+            System.out.println("INVALID");
+        }
+        else{
+            if(t == 1 || t == 3 || t == 5 || t == 7 || t == 8 || t == 10 || t == 12){
+                System.out.println("31");
+            }
+            else if(t == 4 || t == 6 || t == 9 || t == 11){
+                System.out.println("30");
+            }
+            else{
+                if(t % 400 == 0 || (t % 4 == 0 && t % 100 != 0)){
+                    System.out.println("29");
+                }
+                else{
+                    System.out.println("28");
+                }
+            }
+        }
+    }
+}
