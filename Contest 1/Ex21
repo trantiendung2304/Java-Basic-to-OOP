@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Tran Tien Dung
+ */
+
+public class Ex21 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt(), b = sc.nextInt(), k = sc.nextInt();
+        int point = 0;
+        if(k % 2 == 0){
+            point = (k / 2) * (a - b);
+        }
+        else{
+            point = (k / 2) * (a - b) + a;
+        }
+        System.out.println(point);
+    }
+}
