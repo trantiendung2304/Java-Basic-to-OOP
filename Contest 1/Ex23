@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Tran Tien Dung
+ */
+
+public class Ex23 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt(), m = sc.nextInt();
+        int minStep = 0;
+        if(n % 2 == 0){
+            minStep = n / 2;
+        }
+        else{
+            minStep = n / 2 + 1;
+        }
+        int maxStep = n;
+        int finalStep = 0;
+        if(minStep % m == 0){
+            finalStep = minStep;
+        }
+        else{
+            finalStep = ((minStep / m) + 1) * m;
+            if(finalStep > maxStep){
+                finalStep = -1;
+            }
+        }
+        System.out.println(finalStep);
+    }
+}
