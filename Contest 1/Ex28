@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Tran Tien Dung
+ */
+
+public class Ex28 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt(), u1 = sc.nextInt(), d = sc.nextInt();
+        long finalNum = u1 + (long)(n - 1) * d;
+        long sum = ((u1 + finalNum) * n) / 2;
+        System.out.println(sum);
+    }
+}
